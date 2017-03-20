@@ -1,4 +1,4 @@
-\documentclass[DM,lsstdraft,PL]{lsstdoc}
+\documentclass[toc,DM,lsstdraft,PL]{lsstdoc}
 
 %\renewcommand{\putlogo}{
 %  \def\@lbsize{0.75}
@@ -7,17 +7,12 @@
 %   \end{center}
 %}
 
-
-\begin{document}
-
-\setDocTitle    [DM Risk Process]
-                    {\color[rgb]{0.16,0.42,0.57} \sf ~DM Risk
-                    Management Process}
-\setDocAuthor   {William O'Mullane, Tim Jenness}                % the author(s)
+\title          [DM Risk Process]{DM Risk Management Process}
+\author         {William O'Mullane, Tim Jenness}                % the author(s)
 \setDocApprove  {DM project manager}              % approval by ...
 \setDocIssue    {01}                        % the issue
 \setDocRevision {D}                        % the revision
-\setDocRef      {LDM-512-\docIssue} % the reference code
+\setDocRef      {LDM-512} % the reference code
 \setDocDate     {\today}              % the date of the issue
 \setDocStatus   {Draft}                    % the document status
 \setDocCompact  {true}
@@ -25,28 +20,23 @@
 %
 % a short abstract
 %
-\setDocAbstract {This document defines the risk management process for DM within the overall LSST Risk management process.  Some text in this document has been borrowed from Gaia DPAC, in particular Ron Drimmel worked on this originally.
+\setDocAbstract {This document defines the risk management process for DM within the overall LSST Risk management process.
 }
-
-%
-% the title page
-%
-\mktitle
 
 %
 %   Revision history
 %
-\begin{docHistory}
-\addtohist{D}{1}{22-01-2017}{WOM}{Creation}
-\end{docHistory}
+% OLDEST FIRST: VERSION, DATE, DESCRIPTION, OWNER NAME
+\setDocChangeRecord{%
+\addtohist{1}{2017-01-22}{Creation. Initial text borrowed from Gaia DPAC equivalent.}{WOM, Ron Drimmel.}
+}
+
+\begin{document}
 
 %
-%   TOC
+% the title page
 %
-\newpage
-\setcounter{tocdepth}{3}
-\tableofcontents
-\newpage
+\maketitle
 
 %
 % It's all yours from here on
