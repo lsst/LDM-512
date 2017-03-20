@@ -10,11 +10,11 @@ OBJ=$(FN:.tex=.pdf)
 
 all: $(OBJ)
 
-$(OBJ) : $(SRCS) $(IMGS) 
+$(OBJ) : $(SRCS) $(IMGS)
 	latexmk -bibtex -pdf -f  $(FN)
 
 clean :
-	latexmk -c 
+	latexmk -c
 
 acronyms :
 	acronyms.csh LDM-512.tex process.tex jira.tex
