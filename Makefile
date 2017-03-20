@@ -5,10 +5,10 @@ SRCS=$(wildcard *.tex)
 
 IMGS=$(wildcard images/*.pdf images/*.png)
 
-FN=$(wildcard Doc*.tex)
+FN=$(wildcard LDM*.tex)
 OBJ=$(FN:.tex=.pdf)
 
-all: $(OBJ) 
+all: $(OBJ)
 
 $(OBJ) : $(SRCS) $(IMGS) 
 	latexmk -bibtex -pdf -f  $(FN)
@@ -17,4 +17,4 @@ clean :
 	latexmk -c 
 
 acronyms :
-	acronyms.csh Document-25323.tex process.tex jira.tex 
+	acronyms.csh LDM-512.tex process.tex jira.tex
