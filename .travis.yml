@@ -8,5 +8,5 @@ before_install:
 install:
   - git clone https://github.com/lsst/lsst-texmf.git
 script:
-  - export TEXMFLOCAL=./texmf
+  - export TEXMFLOCAL=./lsst-texmf/texmf
   - make
